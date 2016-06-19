@@ -1,0 +1,40 @@
+#include <16f628a.h>
+#use delay(clock=2000000)
+#fuses NOLVP, NOMCLR, PUT, INTRC_IO, BROWNOUT, NOWDT
+
+
+void main()
+{
+   int a;
+   while(1)
+   {
+      output_high(pin_b0);
+      delay_ms(10);
+      output_low(pin_b0);
+      delay_ms(10);
+      output_high(pin_b1);
+      delay_ms(10);
+      output_low(pin_b1);
+      delay_ms(10);
+      output_high(pin_b2);
+      delay_ms(10);
+      output_low(pin_b2);
+      delay_ms(10);
+      output_high(pin_b3);
+      delay_ms(10);
+      output_low(pin_b3);
+      delay_ms(10);
+      output_high(pin_b4);
+      delay_ms(10);
+      output_low(pin_b4);
+      delay_ms(10);
+      output_high(pin_b5);
+      delay_ms(10);
+      output_low(pin_b5);
+      delay_ms(10);
+    
+   
+   }
+
+   
+}

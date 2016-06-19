@@ -1,0 +1,48 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+021     main.a
+022     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+0004  @delay_ms1
+0012  main
+0012  @cinit
+
+Project Directory:
+    e:\kk\
+
+Project Files:
+    piscaled.c
+    C:\Arquivos de programas\PICC\devices\16f628a.h
+
+Units:
+    piscaled.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      piscaled.err
+    Ext Symbols: piscaled.esym
+    INHX8:       piscaled.hex
+    Symbols:     piscaled.sym
+    List:        piscaled.lst
+    Debug/COFF:  piscaled.cof
+    Project:     piscaled.PJT
+    Call Tree:   piscaled.tre
+    Statistics:  piscaled.sta

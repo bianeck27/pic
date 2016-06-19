@@ -1,0 +1,43 @@
+
+ROM used: 110 (5%)
+          110 (5%) including unused fragments
+
+          0 Average locations per line
+          4 Average locations per statement
+
+RAM used: 7 (3%) at main() level
+          8 (4%) worst case
+
+Stack used: 1 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   41    26 100  piscaled.c
+  208     0   0  C:\Arquivos de programas\PICC\devices\16f628a.h
+----- -----
+  249    26 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     14  13   1             @delay_ms1
+0     92  84   1   612  1.9  main
+
+Program metrics:
+    Functions               1
+    Statements              26
+    Comments                63
+    Volume (V)              615
+    Difficilty (D)          1.9
+    Effort to implement (E) 1162
+    Time to implement (T)   1 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    71
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   106  1938  
+
+
+

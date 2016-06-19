@@ -1,0 +1,168 @@
+CCS PCM C Compiler, Version 4.057, 30864               18-set-11 21:09
+
+               Filename: piscaled.lst
+
+               ROM used: 110 words (5%)
+                         Largest free fragment is 1938
+               RAM used: 7 (3%) at main() level
+                         8 (4%) worst case
+               Stack:    1 locations
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   012
+0003:  NOP
+.................... #include <16f628a.h> 
+.................... //////// Standard Header file for the PIC16F628A device //////////////// 
+.................... #device PIC16F628A 
+.................... #list 
+....................  
+.................... #use delay(clock=2000000) 
+0004:  MOVLW  22
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   011
+000A:  MOVLW  A5
+000B:  MOVWF  77
+000C:  DECFSZ 77,F
+000D:  GOTO   00C
+000E:  NOP
+000F:  DECFSZ 00,F
+0010:  GOTO   00A
+0011:  RETLW  00
+.................... #fuses NOLVP, NOMCLR, PUT, INTRC_IO, BROWNOUT, NOWDT 
+....................  
+....................  
+.................... void main() 
+.................... { 
+0012:  CLRF   04
+0013:  BCF    03.7
+0014:  MOVLW  1F
+0015:  ANDWF  03,F
+0016:  MOVLW  07
+0017:  MOVWF  1F
+....................    int a; 
+....................    while(1) 
+....................    { 
+....................       output_high(pin_b0); 
+0018:  BSF    03.5
+0019:  BCF    06.0
+001A:  BCF    03.5
+001B:  BSF    06.0
+....................       delay_ms(10); 
+001C:  MOVLW  0A
+001D:  MOVWF  22
+001E:  CALL   004
+....................       output_low(pin_b0); 
+001F:  BSF    03.5
+0020:  BCF    06.0
+0021:  BCF    03.5
+0022:  BCF    06.0
+....................       delay_ms(10); 
+0023:  MOVLW  0A
+0024:  MOVWF  22
+0025:  CALL   004
+....................       output_high(pin_b1); 
+0026:  BSF    03.5
+0027:  BCF    06.1
+0028:  BCF    03.5
+0029:  BSF    06.1
+....................       delay_ms(10); 
+002A:  MOVLW  0A
+002B:  MOVWF  22
+002C:  CALL   004
+....................       output_low(pin_b1); 
+002D:  BSF    03.5
+002E:  BCF    06.1
+002F:  BCF    03.5
+0030:  BCF    06.1
+....................       delay_ms(10); 
+0031:  MOVLW  0A
+0032:  MOVWF  22
+0033:  CALL   004
+....................       output_high(pin_b2); 
+0034:  BSF    03.5
+0035:  BCF    06.2
+0036:  BCF    03.5
+0037:  BSF    06.2
+....................       delay_ms(10); 
+0038:  MOVLW  0A
+0039:  MOVWF  22
+003A:  CALL   004
+....................       output_low(pin_b2); 
+003B:  BSF    03.5
+003C:  BCF    06.2
+003D:  BCF    03.5
+003E:  BCF    06.2
+....................       delay_ms(10); 
+003F:  MOVLW  0A
+0040:  MOVWF  22
+0041:  CALL   004
+....................       output_high(pin_b3); 
+0042:  BSF    03.5
+0043:  BCF    06.3
+0044:  BCF    03.5
+0045:  BSF    06.3
+....................       delay_ms(10); 
+0046:  MOVLW  0A
+0047:  MOVWF  22
+0048:  CALL   004
+....................       output_low(pin_b3); 
+0049:  BSF    03.5
+004A:  BCF    06.3
+004B:  BCF    03.5
+004C:  BCF    06.3
+....................       delay_ms(10); 
+004D:  MOVLW  0A
+004E:  MOVWF  22
+004F:  CALL   004
+....................       output_high(pin_b4); 
+0050:  BSF    03.5
+0051:  BCF    06.4
+0052:  BCF    03.5
+0053:  BSF    06.4
+....................       delay_ms(10); 
+0054:  MOVLW  0A
+0055:  MOVWF  22
+0056:  CALL   004
+....................       output_low(pin_b4); 
+0057:  BSF    03.5
+0058:  BCF    06.4
+0059:  BCF    03.5
+005A:  BCF    06.4
+....................       delay_ms(10); 
+005B:  MOVLW  0A
+005C:  MOVWF  22
+005D:  CALL   004
+....................       output_high(pin_b5); 
+005E:  BSF    03.5
+005F:  BCF    06.5
+0060:  BCF    03.5
+0061:  BSF    06.5
+....................       delay_ms(10); 
+0062:  MOVLW  0A
+0063:  MOVWF  22
+0064:  CALL   004
+....................       output_low(pin_b5); 
+0065:  BSF    03.5
+0066:  BCF    06.5
+0067:  BCF    03.5
+0068:  BCF    06.5
+....................       delay_ms(10); 
+0069:  MOVLW  0A
+006A:  MOVWF  22
+006B:  CALL   004
+....................      
+....................     
+....................    } 
+006C:  GOTO   018
+....................  
+....................     
+.................... } 
+006D:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F50   NOWDT PUT NOPROTECT BROWNOUT NOMCLR NOLVP INTRC_IO NOCPD
